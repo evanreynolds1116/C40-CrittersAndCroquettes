@@ -4,184 +4,273 @@ from datetime import date
 # Petting area animals
 class Llama:
 
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
         self.shift = shift
+        self.food = food
+
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
 
 class Donkey:
 
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
         self.shift = shift
+        self.food = food
+
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
 
 class Goat:
 
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
         self.shift = shift
+        self.food = food
+    
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
 
 class Alpaca:
 
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
         self.shift = shift
+        self.food = food
+    
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
 
 class Pig:
 
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
         self.shift = shift
+        self.food = food
+
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
 
 # Glass tank animals
 class Snake:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.slithering = True
+        self.food = food
+
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
 
 class Lizard:
 
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
         self.shift = shift
+        self.food = food
+
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
 
 class Tortoise:
 
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
         self.shift = shift
+        self.food = food
+
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
 
 class Turtle:
 
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
         self.shift = shift
+        self.food = food
+
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
 
 class Alligator:
 
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
         self.shift = shift
+        self.food = food
+
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
 
 # Pond animals
 class Fish:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.swimming = True
+        self.food = food
+
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
 
 class Bird:
 
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
         self.shift = shift
+        self.food = food
+
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
 
 class Frog:
 
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
         self.shift = shift
+        self.food = food
+
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
 
 class Toad:
 
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
         self.shift = shift
+        self.food = food
+
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
 
 class Duck:
 
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
         self.shift = shift
+        self.food = food
 
-barbara = Llama("Barbara", "Domestic Llama", "morning")
-print(barbara.name)
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
 
-kong = Donkey("Kong", "African Wild Ass", "midday")
-print(kong.name)
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
 
-tom_brady = Goat("Tom Brady", "Wild Goat", "afternoon")
-print(tom_brady.name)
+barbara = Llama("Barbara", "Domestic Llama", "morning", "Llama Chow")
 
-fluffy = Alpaca("Fluffy", "Domestic Alpaca", "morning")
-print(fluffy.name)
+kong = Donkey("Kong", "African Wild Ass", "midday", "Donkey Chow")
 
-porky = Pig("Porky", "Pot Belly Pig", "midday")
-print(porky.name)
+tom_brady = Goat("Tom Brady", "Wild Goat", "afternoon", "Goat Chow")
 
-bertha = Snake("Bertha", "Green Anaconda")
-print(bertha.name)
+fluffy = Alpaca("Fluffy", "Domestic Alpaca", "morning", "Alpaca Chow")
 
-jose = Lizard("Jose", "Mexican Beaded Lizard", "afternoon")
-print(jose.name)
+porky = Pig("Porky", "Pot Belly Pig", "midday", "Pig Chow")
 
-wayne = Tortoise("Wayne", "Galapagos Tortoise", "morning")
-print(wayne.name)
+bertha = Snake("Bertha", "Green Anaconda", "Snake Chow")
 
-michelangelo = Turtle("Michelangelo", "Teenage Mutant Ninja Turtle", "midday")
-print(michelangelo.name)
+jose = Lizard("Jose", "Mexican Beaded Lizard", "afternoon", "Lizard Chow")
 
-chompy = Alligator("Chompy", "American Alligator", "afternoon")
-print(chompy.name)
+wayne = Tortoise("Wayne", "Galapagos Tortoise", "morning", "Tortoise Chow")
 
-nemo = Fish("Nemo", "Clown Fish")
-print(nemo.name)
+michelangelo = Turtle("Michelangelo", "Teenage Mutant Ninja Turtle", "midday", "Turtle Chow")
 
-miss_blue = Bird("Miss Blue", "Great Blue Turaco", "morning")
-print(miss_blue.name)
+chompy = Alligator("Chompy", "American Alligator", "afternoon", "Alligator Chow")
 
-frogger = Frog("Frogger", "Green Frog", "midday")
-print(frogger.name)
+nemo = Fish("Nemo", "Clown Fish", "Fish Chow")
 
-mr_toad = Toad("Mr. Toad", "Common Toad", "afternoon")
-print(mr_toad.name)
+miss_blue = Bird("Miss Blue", "Great Blue Turaco", "morning", "Bird Chow")
 
-donald = Duck("Donald", "American Pekin Duck", "morning")
-print(donald.name)
+frogger = Frog("Frogger", "Green Frog", "midday", "Frog Chow")
 
-print(f'{donald.name} the {donald.species} is available to pet during the {donald.shift}.')
+mr_toad = Toad("Mr. Toad", "Common Toad", "afternoon", "Toad Chow")
+
+donald = Duck("Donald", "American Pekin Duck", "morning", "Duck Chow")
 
 
+    
