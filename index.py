@@ -28,5 +28,6 @@ print(pet_palace.last_critter_added)
 print(snake_station.last_critter_added)
 print(wet_works.last_critter_added)
 
-
-
+barbara.feed()
+kong.feed()
+tom_brady.feed()
