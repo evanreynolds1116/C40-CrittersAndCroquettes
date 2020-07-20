@@ -23,3 +23,10 @@ for animal in snake_station.animals:
 print(f"{wet_works.attraction_name} is where you'll find {wet_works.description}, like:")
 for animal in wet_works.animals:
     print(f"* {animal.name} the {animal.species}")
+
+print(pet_palace.last_critter_added)
+print(snake_station.last_critter_added)
+print(wet_works.last_critter_added)
+
+
+

@@ -4,13 +4,22 @@ from datetime import date
 # Petting area animals
 class Llama:
 
-    def __init__(self, name, species, shift, food):
+    def __init__(self, name, species, shift, food, chip_num):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
         self.shift = shift
         self.food = food
+        self.__chip_num = chip_num
+
+    @property # the getter
+    def chip_num(self):
+        return self.__chip_num
+
+    @chip_num.setter # the setter
+    def chip_num(self, number):
+        pass
 
     def feed(self):
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
@@ -242,7 +251,7 @@ class Duck:
     def __str__(self):
         return f"{self.name} is a {self.species}"
 
-barbara = Llama("Barbara", "Domestic Llama", "morning", "Llama Chow")
+barbara = Llama("Barbara", "Domestic Llama", "morning", "Llama Chow", 12345)
 
 kong = Donkey("Kong", "African Wild Ass", "midday", "Donkey Chow")
 
@@ -271,6 +280,9 @@ frogger = Frog("Frogger", "Green Frog", "midday", "Frog Chow")
 mr_toad = Toad("Mr. Toad", "Common Toad", "afternoon", "Toad Chow")
 
 donald = Duck("Donald", "American Pekin Duck", "morning", "Duck Chow")
+
+barbara.chip_num = 123456
+print(barbara.chip_num)
 
 
     
