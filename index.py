@@ -1,32 +1,57 @@
-from animals import barbara, kong, tom_brady, fluffy, porky, bertha, jose, wayne, michelangelo, chompy, nemo, miss_blue, frogger, mr_toad, donald
-
+from animals import Goose, Alligator, Alpaca, Bird, Donkey, Duck, Fish, Frog, Goat, Lizard, Llama, Pig, Snake, Toad, Tortoise, Turtle
 from attractions import PettingZoo, SnakePit, Wetlands
 
-pet_palace = PettingZoo("Pet Palace", "animals that are safe to pet")
-snake_station = SnakePit("Snake Station", "things that scare me")
-wet_works = Wetlands("Wet Works", "many different animals")
+barbara = Llama("Barbara", "Domestic Llama", "morning", "Llama Chow", 12345)
 
-pet_palace.add_animal([barbara, kong, tom_brady, fluffy, porky])
+kong = Donkey("Kong", "African Wild Ass", "midday", "Donkey Chow", 12346)
 
-snake_station.add_animal([bertha, jose, wayne, michelangelo, chompy])
+tom_brady = Goat("Tom Brady", "Wild Goat", "afternoon", "Goat Chow", 12347)
 
-wet_works.add_animal([nemo, miss_blue, frogger, mr_toad, donald])
+fluffy = Alpaca("Fluffy", "Domestic Alpaca", "morning", "Alpaca Chow", 12348)
 
-print(f"{pet_palace.attraction_name} is where you'll find {pet_palace.description}, like:")
-for animal in pet_palace.animals:
-    print(f"* {animal.name} the {animal.species}")
+porky = Pig("Porky", "Pot Belly Pig", "midday", "Pig Chow", 12349)
 
-print(f"{snake_station.attraction_name} is where you'll find {snake_station.description}, like:")
-for animal in snake_station.animals:
-    print(f"* {animal.name} the {animal.species}")
+bertha = Snake("Bertha", "Green Anaconda", "Snake Chow", 23456)
 
-print(f"{wet_works.attraction_name} is where you'll find {wet_works.description}, like:")
-for animal in wet_works.animals:
-    print(f"* {animal.name} the {animal.species}")
+jose = Lizard("Jose", "Mexican Beaded Lizard", "afternoon", "Lizard Chow", 23457)
 
-print(pet_palace.last_critter_added)
-print(snake_station.last_critter_added)
-print(wet_works.last_critter_added)
+wayne = Tortoise("Wayne", "Galapagos Tortoise", "morning", "Tortoise Chow", 23458)
+
+michelangelo = Turtle("Michelangelo", "Teenage Mutant Ninja Turtle", "midday", "Turtle Chow", 23459)
+
+chompy = Alligator("Chompy", "American Alligator", "afternoon", "Alligator Chow", 34567)
+
+nemo = Fish("Nemo", "Clown Fish", "Fish Chow", 34568)
+
+miss_blue = Bird("Miss Blue", "Great Blue Turaco", "morning", "Bird Chow", 34569)
+
+frogger = Frog("Frogger", "Green Frog", "midday", "Frog Chow", 45678)
+
+mr_toad = Toad("Mr. Toad", "Common Toad", "afternoon", "Toad Chow", 45679)
+
+donald = Duck("Donald", "American Pekin Duck", "morning", "Duck Chow", 56789)
+
+# Create a Goose
+bob = Goose("Bob", "Canada goose", "watercress sandwiches", 12341)
+bob.run()
+bob.swim()
+
+# Create an attraction
+varmint_village = PettingZoo("Varmint Village", "critters that like to dig and scurry")
+varmint_village.add_animal(bob)
 
 
+for animal in varmint_village.animals:
+    print(animal)
 
+snake_pit = SnakePit("Snake Pit", "snakes and stuff")
+snake_pit.add_animal(bertha)
+
+for animal in snake_pit.animals:
+    print(animal)
+
+wet_lands = Wetlands("Wetlands", "wide variety of animals in here")
+wet_lands.add_animal(nemo)
+
+for animal in wet_lands.animals:
+    print(animal)
